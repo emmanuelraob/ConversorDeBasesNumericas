@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <title>Conversor de bases numéricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Conversor de bases numéricas</h1>
+  <form>
+    <div id="primera-fila">
+        <input type="text" id="input" placeholder="Número a transformar" class="box">
+    </div>
+    <div id="segunda-fila">
+        <div class="base">
+          <span>En base: </span>
+          <input type="number" id="base1" value="10" class="box">
+        </div>
+        <div class="base">
+          <span> a base: </span>
+        <input type="number" id="base2" value="2" class="box">
+        </div>
+    </div>
+    <button type="button" onclick="convert()" class="btn">Convertir</button>
+  </form>
+  <p id="resultado">Resultado: <span id="result"></span></p>
+
+  <p id="texto-final">Este citio es solo una ayuda para las personas que quieren aprender realizar el cambio de base. Se tiene que poner el  número que se quiere transformar, la base en la que está este número y la base a la que se va a transformar. La convinación NaN significa que la convinación no es válida. </p>
+
+    <p id="texto-derechos-de-autor"> Derechos reservados Emmanuel Ramírez 2022 </p>
+  <script src="script.js"></script>
+</body>
+</html>
